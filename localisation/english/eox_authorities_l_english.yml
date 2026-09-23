@@ -1,0 +1,7 @@
+﻿l_english:
+
+auth_xethyrus_dem_monarchy:0 "Monarchial"
+auth_xethyrus_dem_monarchy_desc:0 "Democratic Monarchial governments have regular elections where all councilors can vote on who should represent them. The Monarch however has the a bit of influence in the council that supports them."
+auth_xethyrus_dem_monarchy_tt:1 "$MOD_FACTION_APPROVAL$: §G+10%§!\n$MOD_COUNTRY_LEADER_POOL_SIZE$: §G+1§!\n$auth_xethyrus_dem_monarchy_election_tt$"
+auth_xethyrus_dem_monarchy_election_tt: "Resets Government Mandates and Policy Cooldowns when a new $councilor_ruler_imperial$ is elected"
+concept_auth_xethyrus_dem_monarchy: "$auth_xethyrus_dem_monarchy$"
