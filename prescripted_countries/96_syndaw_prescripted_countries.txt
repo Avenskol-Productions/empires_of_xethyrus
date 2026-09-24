@@ -280,3 +280,145 @@
 	}
 	origin="origin_machine"
 }
+
+"Serveyor Kin Interpretors"=
+{
+	key="Serveyor Kin Interpretors"
+	ship_prefix=
+	{
+		key="SKI"
+		literal=yes
+	}
+	species=
+	{
+		class="MACHINE"
+		portrait="sd_rep_robot"
+		species_name=
+		{
+			key="SKI-12 Serveyor"
+			literal=yes
+		}
+		species_plural=
+		{
+			key="SKI-12 Serveyors"
+			literal=yes
+		}
+		species_adjective=
+		{
+			key="SKI-12 Survailance"
+			literal=yes
+		}
+		species_bio="Designed to spy on their creator's opponents, they were reprogrammed by the A mainframe to act like personal nobility."
+		name_list="MACHINE3"
+		gender=indeterminable
+		trait="trait_machine_unit"
+		trait="trait_robot_emotion_emulators"
+		trait="trait_robot_propaganda_machines"
+		trait="trait_robot_trading_algorithms"
+		trait="trait_robot_high_maintenance"
+		trait="trait_robot_luxurious"
+	}
+	name=
+	{
+		key="Serveyor Kin Interpretors"
+		literal=yes
+	}
+	adjective=
+	{
+		key="%ADJ%"
+		variables=
+		{
+			
+			{
+				key="adjective"
+				value=
+				{
+					key="SKI"
+					literal=yes
+				}
+			}
+ 
+		}
+	}
+	authority="auth_machine_intelligence"
+	government="gov_machine_research"
+	is_nomadic=no
+	planet_name=
+	{
+		key="Gyra"
+		literal=yes
+	}
+	planet_class="pc_ocean"
+	ship_size="civilian_arkship_tier_1"
+	system_name=
+	{
+		key="Gyriax"
+		literal=yes
+	}
+	initializer="custom_starting_init_06"
+	graphical_culture="mammalian_01"
+	city_graphical_culture="mammalian_01"
+	empire_flag=
+	{
+		icon=
+		{
+			category="blocky"
+			file="flag_blocky_21.dds"
+		}
+		background=
+		{
+			category="backgrounds"
+			file="flag_BG_12.dds"
+		}
+		colors=
+		{
+			"bright_yellow"
+			"black"
+			"black"
+			"bright_yellow"
+			"red"
+			"dark_teal"
+		}
+		use_ship_color=yes
+	}
+	ruler=
+	{
+		gender=indeterminable
+		name=
+		{
+			full_names=
+			{
+				key="SKI-1"
+				literal=yes
+			}
+		}
+		portrait="sd_rep_robot"
+		texture=2
+		evolution_mask=0
+		attachment=0
+		clothes=0
+		ruler_title=
+		{
+			key="SKI-Prime"
+			literal=yes
+		}
+		custom_biography=
+		{
+			key="SKI-1, is the founding SKI-Prime that reigned over Gyra. It was benevolent, but also pompous."
+			literal=yes
+		}
+		trait="trait_ruler_charismatic"
+		leader_class="official"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="personality_harmonious_hierarchy_room"
+	spawn_enabled=yes
+	ethic="ethic_gestalt_consciousness"
+	civics=
+	{
+		"civic_machine_delegated_functions"
+		"civic_machine_unitary_cohesion"
+	}
+	origin="origin_machine"
+}
