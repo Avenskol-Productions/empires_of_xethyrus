@@ -1,0 +1,12 @@
+﻿l_english:
+
+ civic_spore_gentle_generalist:0 "Gentle Generalist"
+ civic_spore_gentle_generalist_desc:0 "Resettlement, ten percent off!"
+ civic_spore_gentle_generalist_effects:0 "Decreases resettlement cost."
+ civic_spore_social_suave:0 "Social Suave"
+ civic_spore_social_suave_desc:0 "Your known for your charismatic tools."
+ civic_spore_social_suave_effects:0 "Increases refugee attraction."
+ civic_spore_power_monger:0 "Power Monger"
+ civic_spore_power_monger_desc:0 "Get back into the battle sooner!"
+ civic_spore_power_monger_effects:0 "Decreases war exhaustion."
+ civic_tooltip_spore_cell_civic:0 "Must not already have a cell stage granted civic!"
