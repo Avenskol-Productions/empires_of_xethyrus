@@ -1,100 +1,5 @@
-#BLUE
-civic_spore_gentle_generalist = {
-	description = "civic_spore_gentle_generalist_effects"
-	potential = {
-		ethics = { NOT = { value = ethic_gestalt_consciousness } }
-	}
-	possible = {
-		ethics = {
-			OR = {
-				text = civic_tooltip_materialist
-				value = ethic_materialist
-				value = ethic_fanatic_materialist
-			}
-		}
-		civics = {
-			NOT = {
-				text = civic_tooltip_spore_cell_civic
-				value = civic_spore_power_monger
-				value = civic_spore_social_suave
-			}
-		}
-	}
-	random_weight = { base = @civic_default_random_weight }
-	ai_weight = {
-		base = @ai_civic_default_base_weight
-		modifier = {
-			factor = @ai_civic_personality_match_factor
-			OR = {
-				has_ai_personality = ruthless_capitalists
-				has_ai_personality = peaceful_traders
-			}
-		}
-		modifier = {
-			factor = @ai_civic_personality_mismatch_factor
-			OR = {
-				has_ai_personality = slaving_despots
-			}
-		}
-	}
-	modifier = {
-		pop_resettlement_cost_mult = -0.10
-	}
-}
-
-#GREEN
-civic_spore_social_suave = {
-	description = "civic_spore_social_suave_effects"
-	potential = {
-		ethics = { NOT = { value = ethic_gestalt_consciousness } }
-	}
-	possible = {
-		ethics = {
-			OR = {
-				text = civic_tooltip_egalitarian
-				value = ethic_egalitarian
-				value = ethic_fanatic_egalitarian
-			}
-		}
-		civics = {
-			NOT = {
-				text = civic_tooltip_spore_cell_civic
-				value = civic_spore_gentle_generalist
-				value = civic_spore_power_monger
-			}
-		}
-	}
-	random_weight = { base = @civic_default_random_weight }
-	ai_weight = {
-		base = @ai_civic_default_base_weight
-		modifier = {
-			factor = @ai_civic_personality_match_factor
-			OR = {
-				has_ai_personality = erudite_explorers
-				has_ai_personality = peaceful_traders
-				has_ai_personality = harmonious_hierarchy
-				has_ai_personality = federation_builders
-				has_ai_personality = fanatic_befrienders
-			}
-		}
-		modifier = {
-			factor = @ai_civic_personality_mismatch_factor
-			OR = {
-				has_ai_personality = honorbound_warriors
-				has_ai_personality = evangelising_zealots
-				has_ai_personality = democratic_crusaders
-				has_ai_personality = fanatic_purifiers
-			}
-		}
-	}
-	modifier = {
-		refugee_attraction = 0.20
-	}
-}
-
-#RED
-civic_spore_power_monger = {
-	description = "civic_spore_power_monger_effects"
+civic_spore_zealot = {
+	description = "civic_spore_zealot_effects"
 	potential = {
 		ethics = { NOT = { value = ethic_gestalt_consciousness } }
 	}
@@ -105,12 +10,16 @@ civic_spore_power_monger = {
 				value = ethic_militarist
 				value = ethic_fanatic_militarist
 			}
+			OR = {
+				text = civic_tooltip_spiritualist
+				value = ethic_spiritualist
+				value = ethic_fanatic_spiritualist
+			}
 		}
 		civics = {
-			NOT = {
-				text = civic_tooltip_spore_cell_civic
-				value = civic_spore_gentle_generalist
-				value = civic_spore_social_suave
+			NOR = {
+				text = civic_tooltip_spore_archetype_civic
+				value = civic_spore_trader
 			}
 		}
 	}
@@ -138,5 +47,58 @@ civic_spore_power_monger = {
 	}
 	modifier = {
 		country_war_exhaustion_mult = -0.50
+		country_unity_produces_mult = 0.50
+	}
+}
+civic_spore_trader = {
+	description = "civic_spore_trader_effects"
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+	}
+	possible = {
+		ethics = {
+			OR = {
+				text = civic_tooltip_militarist
+				value = ethic_militarist
+				value = ethic_fanatic_militarist
+			}
+			OR = {
+				text = civic_tooltip_spiritualist
+				value = ethic_spiritualist
+				value = ethic_fanatic_spiritualist
+			}
+		}
+		civics = {
+			NOR = {
+				text = civic_tooltip_spore_archetype_civic
+				value = civic_spore_zealot
+			}
+		}
+	}
+	random_weight = { base = @civic_default_random_weight }
+	ai_weight = {
+		base = @ai_civic_default_base_weight
+		modifier = {
+			factor = @ai_civic_personality_match_factor
+			OR = {
+				has_ai_personality = erudite_explorers
+				has_ai_personality = ruthless_capitalists
+				has_ai_personality = peaceful_traders
+				has_ai_personality = federation_builders
+			}
+		}
+		modifier = {
+			factor = @ai_civic_personality_mismatch_factor
+			OR = {
+				has_ai_personality = honorbound_warriors
+				has_ai_personality = evangelising_zealots
+				has_ai_personality = democratic_crusaders
+				has_ai_personality = fanatic_purifiers
+			}
+		}
+	}
+	modifier = {
+		planet_bureaucrats_upkeep_mult = -0.50
+		planet_miners_minerals_produces_add = 1
 	}
 }
