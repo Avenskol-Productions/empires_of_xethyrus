@@ -10,4 +10,4 @@ tags={
 	"Gameplay"
 }
 name="Empires of Xethyrus"
-supported_version="v4.5.2"
+supported_version="v4.5.4"
