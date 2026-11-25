@@ -177,3 +177,153 @@
 	}
 	origin="origin_necrophage"
 }
+
+"Takarinian Death Cult"=
+{
+	key="Takarinian Death Cult"
+	ship_prefix=
+	{
+		key="TDC"
+		literal=yes
+	}
+	playable = has_necroids #scripted_triggers
+	species=
+	{
+		class="NECROID"
+		portrait="nec5"
+		species_name=
+		{
+			key="Takarinian"
+			literal=yes
+		}
+		species_plural=
+		{
+			key="Takarinians"
+			literal=yes
+		}
+		species_adjective=
+		{
+			key="Takarinian"
+			literal=yes
+		}
+		species_bio="The Takarinians are lead by a powerful death council, a cult of personality comprised of death worshippers."
+		name_list="NECROID2"
+		gender=not_set
+		trait="trait_organic"
+		trait="trait_enduring"
+		trait="trait_resilient"
+		trait="trait_strong"
+		trait="trait_talented"
+		trait="trait_humanoid_psychological_infertility"
+	}
+	name=
+	{
+		key="Takarinian Death Cult"
+		literal=yes
+	}
+	adjective=
+	{
+		key="%ADJ%"
+		variables=
+		{
+			
+			{
+				key="adjective"
+				value=
+				{
+					key="Takarinian"
+					literal=yes
+				}
+			}
+ 
+		}
+	}
+	authority="auth_oligarchic"
+	government="gov_grim_council"
+	is_nomadic=no
+	advisor_voice_type="l_necroid_vir"
+	planet_name=
+	{
+		key="Takar"
+		literal=yes
+	}
+	planet_class="pc_arctic"
+	ship_size="civilian_arkship_tier_1"
+	system_name=
+	{
+		key="Kalastriec"
+		literal=yes
+	}
+	initializer="custom_starting_init_06"
+	graphical_culture="necroid_01"
+	city_graphical_culture="necroid_01"
+	empire_flag=
+	{
+		icon=
+		{
+			category="necroid"
+			file="necroid_08.dds"
+		}
+		background=
+		{
+			category="backgrounds"
+			file="flag_BG_4.dds"
+		}
+		colors=
+		{
+			"black"
+			"dark_grey"
+			"black"
+			"black"
+			"dark_purple"
+			"orange"
+		}
+		use_ship_color=yes
+	}
+	ruler=
+	{
+		gender=male
+		name=
+		{
+			full_names=
+			{
+				key="Drakmaja"
+				literal=yes
+			}
+		}
+		portrait="nec5"
+		texture=3
+		evolution_mask=0
+		attachment=0
+		clothes=0
+		ruler_title=
+		{
+			key="Deathlord"
+			literal=yes
+		}
+		ruler_title_female=
+		{
+			key="Deathlady"
+			literal=yes
+		}
+		custom_biography=
+		{
+			key="Deathlord Drakmaja, the leader of the Takarinian Death Cult. A feared individual, born from decaying cloth."
+			literal=yes
+		}
+		trait="trait_ruler_warlike"
+		leader_class="commander"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="personality_fanatic_purifier_room"
+	spawn_enabled=yes
+	ethic="ethic_pacifist"
+	ethic="ethic_fanatic_spiritualist"
+	civics=
+	{
+		"civic_death_cult"
+		"civic_shadow_council"
+	}
+	origin="origin_default"
+}
