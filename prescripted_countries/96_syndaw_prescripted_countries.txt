@@ -1,3 +1,146 @@
+"Arkatian AI"=
+{
+	key="Arkatian AI"
+	ship_prefix=
+	{
+		key="Arkatian"
+		literal=yes
+	}
+	species=
+	{
+		class="MACHINE"
+		portrait="sd_pla_robot"
+		species_name=
+		{
+			key="Radiant Arkat"
+			literal=yes
+		}
+		species_plural=
+		{
+			key="Radiant Arkati"
+			literal=yes
+		}
+		species_adjective=
+		{
+			key="Radiant Arkatian"
+			literal=yes
+		}
+		species_bio="The Arkatian AI is built to maintain self-control. It is fleeted by reptillian ships of mechanic dominance."
+		name_list="MACHINE2"
+		gender=indeterminable
+		trait="trait_machine_unit"
+		trait="trait_robot_high_bandwidth"
+		trait="trait_robot_luxurious"
+		trait="trait_robot_immortality"
+		trait="trait_robot_high_maintenance"
+		trait="trait_robot_enhanced_memory"
+	}
+	name=
+	{
+		key="Arkatian AI"
+		literal=yes
+	}
+	adjective=
+	{
+		key="%ADJ%"
+		variables=
+		{
+			
+			{
+				key="adjective"
+				value=
+				{
+					key="Arkatian"
+					literal=yes
+				}
+			}
+ 
+		}
+	}
+	authority="auth_machine_intelligence"
+	government="gov_machine_empire"
+	is_nomadic=no
+	advisor_voice_type="l_machine"
+	planet_name=
+	{
+		key="Arkat"
+		literal=yes
+	}
+	planet_class="pc_continental"
+	ship_size="civilian_arkship_tier_1"
+	system_name=
+	{
+		key="Akroa"
+		literal=yes
+	}
+	initializer="custom_starting_init_06"
+	graphical_culture="reptilian_01"
+	city_graphical_culture="mammalian_01"
+	empire_flag=
+	{
+		icon=
+		{
+			category="spherical"
+			file="flag_spherical_16.dds"
+		}
+		background=
+		{
+			category="backgrounds"
+			file="circle.dds"
+		}
+		colors=
+		{
+			"white"
+			"teal"
+			"black"
+			"light_green"
+			"pink"
+			"dark_teal"
+		}
+		use_ship_color=yes
+	}
+	ruler=
+	{
+		gender=indeterminable
+		name=
+		{
+			full_names=
+			{
+				key="Arkatian Prime"
+				literal=yes
+			}
+		}
+		portrait="sd_pla_robot"
+		texture=3
+		evolution_mask=0
+		attachment=0
+		clothes=0
+		ruler_title=
+		{
+			key="Arkatian CPU"
+			literal=yes
+		}
+		custom_biography=
+		{
+			key="Purple metal upon black steel, signs a string of code, lettered to dominion."
+			literal=yes
+		}
+		trait="trait_ruler_logistic_understanding"
+		leader_class="official"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="personality_erudite_explorers_room"
+	spawn_enabled=yes
+	ethic="ethic_gestalt_consciousness"
+	civics=
+	{
+		"civic_machine_ascensionists"
+		"civic_machine_factory_overclock"
+	}
+	origin="origin_machine"
+}
+
 "CyberTechnological Distributors"=
 {
 	key="CyberTechnological Distributors"
@@ -140,12 +283,186 @@
 	origin="origin_machine"
 }
 
+"Hero Incorporate Regulators"=
+{
+	key="Hero Incorporate Regulators"
+	ship_prefix=
+	{
+		key="HIR"
+		literal=yes
+	}
+	species=
+	{
+		class="MACHINE"
+		portrait="sd_avi_robot"
+		species_name=
+		{
+			key="HIR Segante"
+			literal=yes
+		}
+		species_plural=
+		{
+			key="HIR Segantes"
+			literal=yes
+		}
+		species_adjective=
+		{
+			key="HIR"
+			literal=yes
+		}
+		species_bio="The Hero Incorporate Regulators are a novel design of winged robots, built on research."
+		name_list="MACHINE4"
+		gender=indeterminable
+		trait="trait_machine_unit"
+		trait="trait_robot_learning_algorithms"
+		trait="trait_robot_enhanced_memory"
+		trait="trait_robot_high_bandwidth"
+		trait="trait_robot_high_maintenance"
+		trait="trait_robot_mass_produced"
+	}
+	secondary_species=
+	{
+		class="MAM"
+		portrait="mammalian_ar_10"
+		species_name=
+		{
+			key="Rakina"
+			literal=yes
+		}
+		species_plural=
+		{
+			key="Rakinai"
+			literal=yes
+		}
+		species_adjective=
+		{
+			key="Rakinaian"
+			literal=yes
+		}
+		species_bio="The Rakinai are rodent like people who founded the HIR. They are cybernetically adapted and born to trivialise many sorrows."
+		name_list="MAM2"
+		gender=not_set
+		trait="trait_organic"
+		trait="trait_cybernetic"
+		trait="trait_communal"
+		trait="trait_conservational"
+		trait="trait_slow_breeders"
+		trait="trait_repugnant"
+		trait="trait_extremely_adaptive"
+	}
+	name=
+	{
+		key="Hero Incorporate Regulators"
+		literal=yes
+	}
+	adjective=
+	{
+		key="%ADJ%"
+		variables=
+		{
+			
+			{
+				key="adjective"
+				value=
+				{
+					key="HIR"
+					literal=yes
+				}
+			}
+ 
+		}
+	}
+	authority="auth_machine_intelligence"
+	government="gov_machine_assimilator"
+	is_nomadic=no
+	advisor_voice_type="l_machine"
+	planet_name=
+	{
+		key="HIR Prime"
+		literal=yes
+	}
+	planet_class="pc_alpine"
+	ship_size="civilian_arkship_tier_1"
+	system_name=
+	{
+		key="Segante"
+		literal=yes
+	}
+	initializer="custom_starting_init_01"
+	graphical_culture="molluscoid_01"
+	city_graphical_culture="mammalian_01"
+	empire_flag=
+	{
+		icon=
+		{
+			category="blocky"
+			file="flag_blocky_17.dds"
+		}
+		background=
+		{
+			category="backgrounds"
+			file="flag_BG_18.dds"
+		}
+		colors=
+		{
+			"black"
+			"blue"
+			"black"
+			"dark_blue"
+			"orange"
+			"dark_green"
+		}
+		use_ship_color=yes
+	}
+	ruler=
+	{
+		gender=indeterminable
+		name=
+		{
+			full_names=
+			{
+				key="Seglar"
+				literal=yes
+			}
+		}
+		portrait="sd_avi_robot"
+		texture=3
+		evolution_mask=0
+		attachment=0
+		clothes=0
+		ruler_title=
+		{
+			key="Primarch"
+			literal=yes
+		}
+		custom_biography=
+		{
+			key="Primarch Seglar, built to lead the scientific HIR, in their efforts to lead their people to greatness!"
+			literal=yes
+		}
+		trait="leader_trait_spark_of_genius"
+		leader_class="scientist"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="toxoids_room"
+	spawn_enabled=yes
+	ethic="ethic_gestalt_consciousness"
+	civics=
+	{
+		"civic_machine_assimilator"
+		"civic_machine_factory_overclock"
+	}
+	origin="origin_machine"
+}
+
 "Ravaging Destroyers"=
 {
 	key="Ravaging Destroyers"
 	ship_prefix=
 	{
-		key=""
+		key="RD"
+		literal=yes
 	}
 	species=
 	{
@@ -356,7 +673,7 @@
 		literal=yes
 	}
 	initializer="custom_starting_init_06"
-	graphical_culture="mammalian_01"
+	graphical_culture="arthropoid_01"
 	city_graphical_culture="mammalian_01"
 	empire_flag=
 	{
@@ -419,6 +736,149 @@
 	{
 		"civic_machine_delegated_functions"
 		"civic_machine_unitary_cohesion"
+	}
+	origin="origin_machine"
+}
+
+"The Servo Technologists"=
+{
+	key="The Servo Technologists"
+	ship_prefix=
+	{
+		key="TST"
+		literal=yes
+	}
+	species=
+	{
+		class="MACHINE"
+		portrait="sd_art_robot"
+		species_name=
+		{
+			key="Servo Technologist"
+			literal=yes
+		}
+		species_plural=
+		{
+			key="Servo Technologists"
+			literal=yes
+		}
+		species_adjective=
+		{
+			key="Servotic Technologistic"
+			literal=yes
+		}
+		species_bio="Built to weak designs, the TSTs are able to learn much, but can't last over a number of periods."
+		name_list="MACHINE3"
+		gender=indeterminable
+		trait="trait_machine_unit"
+		trait="trait_robot_learning_algorithms"
+		trait="trait_robot_efficient_processors"
+		trait="trait_robot_bulky"
+		trait="trait_robot_high_maintenance"
+		trait="trait_robot_uncanny"
+	}
+	name=
+	{
+		key="The Servo Technologists"
+		literal=yes
+	}
+	adjective=
+	{
+		key="%ADJ%"
+		variables=
+		{
+			
+			{
+				key="adjective"
+				value=
+				{
+					key="TST"
+					literal=yes
+				}
+			}
+ 
+		}
+	}
+	authority="auth_machine_intelligence"
+	government="gov_machine_research"
+	is_nomadic=no
+	advisor_voice_type="l_machine"
+	planet_name=
+	{
+		key="TST Prime"
+		literal=yes
+	}
+	planet_class="pc_tropical"
+	ship_size="civilian_arkship_tier_1"
+	system_name=
+	{
+		key="Arkosait"
+		literal=yes
+	}
+	initializer="custom_starting_init_04"
+	graphical_culture="avian_01"
+	city_graphical_culture="avian_01"
+	empire_flag=
+	{
+		icon=
+		{
+			category="pointy"
+			file="flag_pointy_19.dds"
+		}
+		background=
+		{
+			category="backgrounds"
+			file="flag_BG_35.dds"
+		}
+		colors=
+		{
+			"black"
+			"turquoise"
+			"black"
+			"ice_turquoise"
+			"red"
+			"dark_teal"
+		}
+		use_ship_color=yes
+	}
+	ruler=
+	{
+		gender=indeterminable
+		name=
+		{
+			full_names=
+			{
+				key="TST Primus"
+				literal=yes
+			}
+		}
+		portrait="sd_art_robot"
+		texture=3
+		evolution_mask=0
+		attachment=0
+		clothes=0
+		ruler_title=
+		{
+			key="TST Central"
+			literal=yes
+		}
+		custom_biography=
+		{
+			key="Primus built for intelligence to serve and protect the class of knowledge."
+			literal=yes
+		}
+		trait="trait_ruler_eye_for_talent"
+		leader_class="scientist"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="personality_peaceful_traders_room"
+	spawn_enabled=yes
+	ethic="ethic_gestalt_consciousness"
+	civics=
+	{
+		"civic_machine_delegated_functions"
+		"civic_machine_ascensionists"
 	}
 	origin="origin_machine"
 }
