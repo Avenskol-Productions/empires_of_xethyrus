@@ -137,3 +137,165 @@
 	}
 	origin="origin_lithoid"
 }
+
+"Skelati Regulatory Imperials"=
+{
+	key="Skelati Regulatory Imperials"
+	ship_prefix=
+	{
+		key="SRI"
+		literal=yes
+	}
+	playable = has_lithoids #scripted_triggers
+	species=
+	{
+		class="LITHOID"
+		portrait="lith15"
+		species_name=
+		{
+			key="Skelati"
+			literal=yes
+		}
+		species_plural=
+		{
+			key="Skelati"
+			literal=yes
+		}
+		species_adjective=
+		{
+			key="Skelati"
+			literal=yes
+		}
+		species_bio="The SRI, are comprised of the Skelati, they bear explosive crystals capable of detonating at will!"
+		name_list="LITHOID2"
+		gender=not_set
+		trait="trait_lithoid"
+		trait="trait_humanoid_existential_iteroparity"
+		trait="trait_enduring"
+		trait="trait_lithoid_volatile_excretions"
+		trait="trait_solitary"
+		trait="trait_repugnant"
+	}
+	name=
+	{
+		key="Skelati Regulatory Imperials"
+		literal=yes
+	}
+	adjective=
+	{
+		key="%ADJ%"
+		variables=
+		{
+			
+			{
+				key="adjective"
+				value=
+				{
+					key="SRI"
+					literal=yes
+				}
+			}
+ 
+		}
+	}
+	authority="auth_imperial"
+	government="gov_martial_empire"
+	is_nomadic=no
+	advisor_voice_type="l_lithoid_vir"
+	planet_name=
+	{
+		key="Skelum"
+		literal=yes
+	}
+	planet_class="pc_desert"
+	ship_size="civilian_arkship_tier_1"
+	system_name=
+	{
+		key="Skaylum"
+		literal=yes
+	}
+	initializer="custom_starting_init_05"
+	graphical_culture="lithoid_01"
+	city_graphical_culture="lithoid_01"
+	empire_flag=
+	{
+		icon=
+		{
+			category="lithoid"
+			file="lithoid_08.dds"
+			scenario=no
+		}
+		background=
+		{
+			category="backgrounds"
+			file="flag_BG_15.dds"
+			scenario=no
+		}
+		colors=
+		{
+			"red"
+			"black"
+			"black"
+			"red"
+			"null"
+			"null"
+		}
+		use_ship_color=yes
+	}
+	ruler=
+	{
+		gender=male
+		name=
+		{
+			full_names=
+			{
+				key="Skalyr"
+				literal=yes
+			}
+		}
+		portrait="lith15"
+		texture=2
+		evolution_mask=0
+		attachment=0
+		clothes=0
+		ruler_title=
+		{
+			key="Lord Commander"
+			literal=yes
+		}
+		heir_title=
+		{
+			key="Noble Lord"
+			literal=yes
+		}
+		ruler_title_female=
+		{
+			key="Lady Commander"
+			literal=yes
+		}
+		heir_title_female=
+		{
+			key="Noble Lady"
+			literal=yes
+		}
+		custom_biography=
+		{
+			key="Lord Commander, Skalyr. Born to detonation, prince upon the sins end!"
+			literal=yes
+		}
+		trait="trait_ruler_logistic_understanding"
+		leader_class="commander"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="lithoid_room"
+	spawn_enabled=yes
+	ethic="ethic_fanatic_xenophobe"
+	ethic="ethic_militarist"
+	civics=
+	{
+		"civic_selective_kinship"
+		"civic_warrior_culture"
+	}
+	origin="origin_lithoid"
+}
